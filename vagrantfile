@@ -1,13 +1,13 @@
 Vagrant.configure("2") do |config|
-    config.vm.provider "virtualbox" do |vb|
-      vb.name = "projeto_maquina_2"
-      vb.memory = 1024
-      vb.cpus = 1
-    end
-    # imagem usada
-    config.vm.box = "bento/ubuntu-20.04"
-    # placa de rede publica, em modo bridge
-    config.vm.network "public_network", bridge: "Realtek PCIe GbE Family Controller"
-    # Script externo
-    config.vm.provision "shell", path: "provision.sh
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "projeto_maquina_2"
+    vb.memory = 1024
+    vb.cpus = 1
+  end
+  # imagem usada
+  config.vm.box = "bento/ubuntu-20.04"
+  # placa de rede publica, em modo bridge
+  config.vm.network "public_network", bridge: "Realtek PCIe GbE Family Controller"
+  # Script externo
+  config.vm.provision "shell", path: "provision.sh"
 end
