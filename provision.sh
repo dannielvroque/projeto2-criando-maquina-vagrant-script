@@ -26,7 +26,6 @@ nmap --version | head -n 1
 
 echo "Verification complete."
 
-
 echo "Create person user"
 sudo useradd -m -s /bin/bash droque
 echo "User without password"
