@@ -24,6 +24,8 @@ ifconfig --version 2>/dev/null || echo "Net-tools doesn't show version with this
 htop --version | head -n 1
 nmap --version | head -n 1
 
+asahushasuha
+
 echo "Verification complete."
 
 echo "Create person user"
